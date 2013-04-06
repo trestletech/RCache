@@ -3,13 +3,13 @@
 #' @importFrom httr GET
 #' @importFrom httr content
 #' @export
-download <- function(url){
-  if (!is.null(cache[[url]])){
-    return(cache[[url]])
+download <- function(url){  
+  if (exists(url, envir=cacheEnv)){
+    return(get(url, envir=cacheEnv))
   }
   
   file <- content(GET(url))
-  cache[[url]] <<- file
+  assign(url, file, envir=cacheEnv)
     
   file
 }

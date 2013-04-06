@@ -1,1 +1,1 @@
-cache <- list()
+cacheEnv <- new.env()
