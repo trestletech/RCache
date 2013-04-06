@@ -1,0 +1,14 @@
+Package: RCache
+Type: Package
+Title: An R demo for caching and other package-wide variables.
+Version: 0.1.1
+Date: 2013-04-06
+Author: Jeffrey D. Allen <jeff.allen@trestletechnology.net>
+Maintainer: Jeffrey D. Allen <jeff.allen@trestletechnology.net>
+Description: An R demo for caching and other package-wide variables.
+Imports:
+    httr (>= 0.2)
+License: MIT
+Collate:
+    'set-cache.R'
+    'download.R'
