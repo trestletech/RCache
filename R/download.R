@@ -9,7 +9,7 @@ download <- function(url){
   }
   
   file <- content(GET(url))
-  cache[[url]] <- file
+  cache[[url]] <<- file
     
   file
 }
